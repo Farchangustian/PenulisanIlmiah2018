@@ -1,0 +1,74 @@
+<?php
+	defined('BASEPATH') or exit('No direct script allowed');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Daftar</title>
+</head>
+<body>
+	<div class="well well-sm">
+		<h3>Pendaftaran</h3>	
+	</div>
+	<div class="container-fluid">
+		<div class="col-sm-6">
+			<h1 class="text-center">Makan Soto Setiap Hari</h1><br>
+			<blockquote class="text-center">
+				<center>
+				<img class="img-responsive" alt="logo" src="asset/img/gambar.jpg" width="240px">
+				</center>
+				<p>
+					Cita rasa Santan yang khas.
+				</p>
+			</blockquote>
+		</div>
+		<div class="col-sm-6">
+			<?php echo $error;?>
+			<form class="form-horizontal" action="halaman-daftar.html" method="post">
+		  	  <div class="form-group">
+			    <label style="text-align:left" class="control-label col-sm-3" for="id_user">Username</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" id="id_user" name="id_user" placeholder="Masukkan Username">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label style="text-align:left" class="control-label col-sm-3" for="email">Email</label>
+			    <div class="col-sm-8">
+			      <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan Email">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label style="text-align:left" class="control-label col-sm-3" for="telp_number">No Telepon</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" id="telp_number" name="telp_number" placeholder="Nomor telepon">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label style="text-align:left" class="control-label col-sm-3" for="pwd">Password</label>
+			    <div class="col-sm-8">
+			      <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Masukkan password">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label style="text-align:left" class="control-label col-sm-3" for="repwd">re-Password</label>
+			    <div class="col-sm-8">
+			      <input type="password" class="form-control" id="repwd" name="repwd" placeholder="Masukkan kembali password">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-3 col-sm-8">
+			      <!--<div class="checkbox">
+			        <label><input type="checkbox" checked> Saya setuju dengan aturan yang berlaku</label>
+			      </div>-->
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-3 col-sm-8">
+			      <button type="submit" class="btn btn-default">Daftar</button>
+			    </div>
+			  </div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
